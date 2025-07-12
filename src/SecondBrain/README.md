@@ -1,6 +1,1 @@
-<Catalog 
-  base="/SecondBrain/"
-  :hideHeading="true"
-  :level="2"
-  :index="false"
-/>
+<Catalog base="/SecondBrain/" :hideHeading="true" :level="2" :index="false" />
