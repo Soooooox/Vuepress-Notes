@@ -26,6 +26,7 @@ jobs:
 
       - name: 克隆 SecondBrain 仓库
         run: |
+          rm -rf src/SecondBrain
           git clone https://github.com/Soooooox/SecondBrain.git src/SecondBrain
           rm -rf src/SecondBrain/.git
           rm -rf src/SecondBrain/LICENSE
