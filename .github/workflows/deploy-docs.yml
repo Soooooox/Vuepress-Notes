@@ -26,11 +26,11 @@ jobs:
 
       - name: 克隆 SecondBrain 仓库
         run: |
-          git clone https://github.com/Soooooox/SecondBrain.git SecondBrain
-          rm -rf SecondBrain/.git
-          rm -rf SecondBrain/LICENSE
-          touch SecondBrain/README.md
-          echo "<Catalog base="/SecondBrain/" :hideHeading="true" :level="2" :index="false" />" > SecondBrain/README.md
+          git clone https://github.com/Soooooox/SecondBrain.git src/SecondBrain
+          rm -rf src/SecondBrain/.git
+          rm -rf src/SecondBrain/LICENSE
+          touch src/SecondBrain/README.md
+          echo "<Catalog base=\"/SecondBrain/\" :hideHeading=\"true\" :level=\"2\" :index=\"false\" />" > src/SecondBrain/README.md
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
