@@ -1,10 +1,14 @@
-
 name: 部署文档
 
 on:
   push:
     branches:
       - main
+  schedule:
+    # 每天 UTC 时间 16:00 (北京时间 00:00) 运行
+    - cron: '0 16 * * *'
+  # 允许手动触发
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -25,7 +29,7 @@ jobs:
           git clone https://github.com/Soooooox/SecondBrain.git SecondBrain
           rm -rf SecondBrain/.git
           rm -rf SecondBrain/LICENSE
-          touch /SecondBrain/README.md
+          touch SecondBrain/README.md
           echo "<Catalog base="/SecondBrain/" :hideHeading="true" :level="2" :index="false" />" > SecondBrain/README.md
 
       - name: 设置 pnpm
