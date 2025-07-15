@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://soooooox.github.io/Vuepress-Notes/Vuepress-Notes/sitemap.xml
