@@ -4,16 +4,18 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  // hostname: "",
+  hostname: "https://soooooox.github.io/Vuepress-Notes/",
 
   author: {
     name: "Soooooox",
-    // url: "",
+    url: "https://github.com/Soooooox",
   },
 
-  // logo: "",
+  logo: "/images/logo.png",
 
-  // repo: "",
+  favicon:"/images/logo.png",
+
+  repo: "https://github.com/Soooooox/Vuepress-Notes",
 
   docsDir: "src",
 
@@ -68,6 +70,7 @@ export default hopeTheme({
     icon: {
       prefix: "fa6-solid:",
     }, // 图标前缀，网站：https://fontawesome.com/icons
+    
     // catalog:({
     //   level:1,
     //   index:false,
